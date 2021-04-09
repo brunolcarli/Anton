@@ -11,7 +11,7 @@
 
 <div align="center">
 
-> [![Version badge](https://img.shields.io/badge/version-0.0.1-silver.svg)]()
+> [![Version badge](https://img.shields.io/badge/version-0.0.2-silver.svg)]()
 
 
 Este serviço disponibiliza uma API GraphQL com modelos de redes neurais recorrentes para gerar texto baseado em exemplos da bíblia satânica de Anton Szandor LaVey.
