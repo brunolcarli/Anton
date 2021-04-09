@@ -17,6 +17,7 @@
 Este serviço disponibiliza uma API GraphQL com modelos de redes neurais recorrentes para gerar texto baseado em exemplos da bíblia satânica de Anton Szandor LaVey.
 
 Uma demo está disponível em: `https://anton.brunolcarli.repl.co/graphql/`
+</div>
 
 Exemplo de consulta:
 
