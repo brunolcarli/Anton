@@ -19,11 +19,11 @@ class Query:
     generated_text = graphene.Field(
         GeneratedText,
         model_version=ModelSpecifications(description='foo'),
-        description='Generates text based on a versioned dumped model. default -> SATANIC_I'
+        description='Generates text based on a versioned dumped model. default -> SATANIC_II'
     )
 
     def resolve_generated_text(self, info, **kwargs):
-        model_version = kwargs.get('model_version', ModelSpecifications.SATANIC_I)
+        model_version = kwargs.get('model_version', ModelSpecifications.SATANIC_II)
 
         with open('anton/corpora/satanic_samples.txt', 'r') as samples:
             data = samples.read()

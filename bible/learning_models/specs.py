@@ -9,3 +9,10 @@ class ModelSpecifications(Enum):
                  'LR 0.01 sobre uma fatia [300:400] pre-processada da' \
                  ' biblia satânica.'
     }
+    SATANIC_II = {
+        'model': 'satanic_version_ii',
+        'fpath': 'bible/learning_models/satanic_version_ii',
+        'about': 'LSTM de 180 camadas ocultas treinada em 3000 epochs sobre ' \
+                 'LR 0.01 sobre uma fatia [300:400] pre-processada da' \
+                 ' biblia satânica.'
+    }
