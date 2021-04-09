@@ -42,5 +42,18 @@ Exemplo de resposta:
 }
 ```
 
+Exemplo com Python
+
+```py
+>>> import requests
+>>> data = '{generatedText{text}}'
+>>> url = 'https://anton.brunolcarli.repl.co/graphql/'
+>>> response = requests.post(url, json={'query': data})
+>>> response.json()
+{'data': {'generatedText': {'text': 'parte veido ou tramisação sexual deriridos seus
+ você não pode sandicos iodesso senessosfrente verdo verdade descondecado não setâni
+ca dimpreventas emenofulha esanam caminhos encria prazer tantrgia tom temer'}}}
+>>>
+```
 
 Este projeto é puramente recreacional e não possui fins lucrativos. Todos os direitos de propriedade da Bíblica Satânica pertencem a seu grã criador Anton LaVey.
