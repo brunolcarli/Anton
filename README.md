@@ -43,4 +43,4 @@ Exemplo de resposta:
 ```
 
 
-Este projeto é puramento recreacional e não possui fins lucrativos. Todos os direitos de propriedade da Bíblica Satânica pertencem a seu grã criador Anton LaVey.
+Este projeto é puramente recreacional e não possui fins lucrativos. Todos os direitos de propriedade da Bíblica Satânica pertencem a seu grã criador Anton LaVey.
