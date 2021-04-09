@@ -14,4 +14,32 @@
 > [![Version badge](https://img.shields.io/badge/version-0.0.1-silver.svg)]()
 
 
-WIP
+Este serviço disponibiliza uma API GraphQL com modelos de redes neurais recorrentes para gerar texto baseado em exemplos da bíblia satânica de Anton Szandor LaVey.
+
+Uma demo está disponível em: `https://anton.brunolcarli.repl.co/graphql/`
+
+Exemplo de consulta:
+
+
+```json
+query{
+  generatedText{
+    text
+  }
+}
+```
+
+Exemplo de resposta:
+
+```json
+{
+  "data": {
+    "generatedText": {
+      "text": "inferno católico protestanto satanistas esconhecer satânico sente ondo terrdivedo umo pessoa feverente reques seun condado maprender ser dausadisar diveriades"
+    }
+  }
+}
+```
+
+
+Este projeto é puramento recreacional e não possui fins lucrativos. Todos os direitos de propriedade da Bíblica Satânica pertencem a seu grã criador Anton LaVey.
