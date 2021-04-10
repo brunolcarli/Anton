@@ -23,7 +23,7 @@ class Query:
     )
 
     def resolve_generated_text(self, info, **kwargs):
-        model_version = kwargs.get('model_version', ModelSpecifications.SATANIC_II)
+        model_version = kwargs.get('model_version', ModelSpecifications.SATANIC_II.value)
 
         with open('anton/corpora/satanic_samples.txt', 'r') as samples:
             data = samples.read()
@@ -33,9 +33,9 @@ class Query:
         chars_to_idx = {ch:i for i, ch in enumerate(chars)}
         idx_to_chars = {i:ch for ch, i in chars_to_idx.items()}
 
-        model = load_model(model_version.value['fpath'])
-        version = model_version.value['model']
-        about = model_version.value['about']
+        model = load_model(model_version['fpath'])
+        version = model_version['model']
+        about = model_version['about']
         text = sample(model, idx_to_chars, chars_to_idx, 1000)
 
         return GeneratedText(model_version=version, about=about, text=text)
