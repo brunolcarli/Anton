@@ -16,3 +16,10 @@ class ModelSpecifications(Enum):
                  'LR 0.01 sobre uma fatia [300:400] pre-processada da' \
                  ' biblia satânica.'
     }
+    SATANIC_III = {
+        'model': 'satanic_version_iii',
+        'fpath': 'bible/learning_models/satanic_version_iii',
+        'about': 'LSTM de 220 camadas ocultas treinada em 2500 epochs com ' \
+                 'LR 0.01 sobre uma fatia [600:700] pre-processada da' \
+                 ' biblia satânica com Total Loss 19.8502 de convergência.'
+    }
