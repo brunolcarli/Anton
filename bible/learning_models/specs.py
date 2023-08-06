@@ -23,3 +23,9 @@ class ModelSpecifications(Enum):
                  'LR 0.01 sobre uma fatia [600:700] pre-processada da' \
                  ' biblia satânica com Total Loss 19.8502 de convergência.'
     }
+
+    SATANIC_LLM = {
+        'model': 'satanicLLM.model',
+        'fpath': 'bible/learning_models/satanicLLM.model',
+        'about': 'LLM treinado sobre a Biblia Satânica completa'
+    }

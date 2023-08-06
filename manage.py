@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
+from bible.tools import SatanicModel, ddic, ddic_aux
 
 if __name__ == '__main__':
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'anton.settings')

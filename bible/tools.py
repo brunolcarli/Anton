@@ -1,6 +1,8 @@
+import random
+from time import time
 import pickle
 import numpy as np
-
+from collections import defaultdict
 
 def initialize_parameters(vocab_size, hidden_layer_size):
     """
@@ -496,3 +498,45 @@ def load_model(fpath):
         model = pickle.load(f)
 
     return model
+
+
+def ddic_aux():
+    return 0
+
+
+def ddic():
+    return defaultdict(ddic_aux)
+
+
+class SatanicModel:
+    def __init__(self, model):
+        self.model = model
+
+    def predict_sentence(self, text):
+        sentence_finished = False
+        start_timer = time()
+    
+        while not sentence_finished:
+          # Set a time limit to generate a response
+          # If the generation take too long return
+          # a default message and avoid been trapped in the loop forever
+          time_limit = time() - start_timer
+          if time_limit / 60  > 1:  # limit = 1min
+              return 'Não consegui pensar em nada'
+            
+          # select a random probability threshold  
+          r = random.random()
+          accumulator = .0
+        
+          for word in self.model[tuple(text[-2:])].keys():
+              accumulator += self.model[tuple(text[-2:])][word]
+              # select words that are above the probability threshold
+              if accumulator >= r:
+                  text.append(word)
+                  break              
+          
+          if text[-2:] == [None, None]:
+              sentence_finished = True
+              
+        
+        return ' '.join([t for t in text if t])
